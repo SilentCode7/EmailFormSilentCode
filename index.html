@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>E-mail form</title>
+</head>
+
+<body>
+    <section>
+        <h2>Contact</h2>
+        <form action="https://api.staticforms.xyz/submit" method="post">
+            <label>Name</label>
+            <input type="text" name="name" placeholder="Type your name" autocomplete="off" required>
+            <label>E-mail</label>
+            <input type="email" name="email" placeholder="Type your e-mail" autocomplete="off" required>
+            <label>Message</label>
+            <textarea name="message" cols="30" rows="10" placeholder="Type your message" required></textarea>
+            <button type="submit">Send</button>
+
+            <input type="hidden" name="accessKey" value="40a895d0-7d1e-4a22-86fb-3708c92d562d">
+
+            <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/thanks.html">
+        </form>
+    </section>
+</body>
+</html>
